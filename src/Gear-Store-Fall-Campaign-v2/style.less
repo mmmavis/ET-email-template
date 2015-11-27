@@ -1,0 +1,124 @@
+@bgGrey: #e8e8e8;
+@bgLightGrey: #f5f5f5;
+@bgGreen: #21b686;
+@bgLightGreen: #6bb94e;
+@textGrey: #414042;
+@textLightGrey: #57575c;
+@textGreen: #54c0a3;
+@textLightGreen: #d2e7c1;
+@linkBlue: #00ADEF;
+@white: #fff;
+
+@import url("https://code.cdn.mozilla.net/fonts/fira.css");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic");
+
+/* ***** CSS properties to avoid and switch to HTML attributes *****
+*  margin, padding ---> cellspacing, cellpadding on <table>
+*  width, height ---> width, height on <table>, <td>
+*/
+
+body {
+  color: @textGrey;
+  font-family: 'Fira Sans', Trebuchet MS;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  img {
+    border: 0 none;
+    outline: none;
+  }
+}
+
+img{
+  border: 0 none;
+  max-width: 600px !important;
+  height: auto !important;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+}
+
+table,
+td {
+  border-collapse: collapse;
+}
+
+td.no-padding {
+  padding: 0;
+}
+
+.open-sans {
+  font-family: 'Open Sans', Trebuchet MS;
+}
+
+#background-table {
+  background: @white;
+}
+
+#content-wrapper-table {
+  background: @bgGrey;
+
+  .grey-link {
+    > span {
+      font-size: 20px;
+      color: #6d6e71;
+    }
+  }
+}
+
+#main-content {
+  background: @bgLightGreen;
+  color: @white;
+  h1 {
+    font-size: 54px !important;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  .note {
+    color: @textLightGreen;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+#shop-now-link {
+  display: block;
+  background: @bgGreen;
+}
+
+#logo-header {
+  background: @white;
+}
+
+#content-footer {
+  color: #c1e3d0;
+  background: @bgGreen;
+  font-size: 21px !important;
+  a {
+    display: inline-block;
+  }
+  a > span {
+    color: @white;
+    text-decoration: none;
+  }
+}
+
+#email-footer {
+  p {
+    font-size: 12px !important;
+    color: @textLightGrey;
+    line-height: 1.2;
+  }
+  a > span {
+    color: @textLightGrey;
+    text-decoration: underline;
+  }
+}
+
+#footer-background-table {
+  background: @bgGreen;
+}
