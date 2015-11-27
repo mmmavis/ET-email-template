@@ -1,0 +1,29 @@
+{
+  "name": "module-name",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Mavis Ou <mavis@mozillafoundation.org>",
+  "scripts": {
+    "prestart": "rm -rf compiled && rm -rf premailer-formatted",
+    "start": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodejitsu/browsenpm.org"
+  },
+  "bugs": {
+    "url": "https://github.com/mmmavis/ET-email-template/issues"
+  },
+  "keywords": [],
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-file-include": "^0.13.7",
+    "gulp-less": "^3.0.1",
+    "gulp-util": "^3.0.4"
+  },
+  "devDependencies": {
+
+  },
+  "license": "MPL-2.0"
+}
+
