@@ -9,6 +9,7 @@
     </style>
   </head>
   <body>
+    <custom name="opencounter" type="tracking">
     <table id="background-table" align="center" cellpadding="20" width="100%">
       <tbody>
         <tr>
@@ -25,7 +26,7 @@
                               <tbody>
                                 <tr>
                                   <td>
-                                    <a href="https://gear.mozilla.org/"><img src="img/mozilla_wordmark_green.png" alt="" width="140" /></a>
+                                    <a href="https://gear.mozilla.org/"><img src="http://image.e.mozilla.org/lib/fe9115707362037b71/m/1/mozilla_wordmark_green.png" alt="" width="140" /></a>
                                   </td>
                                 </tr>
                               </tbody>
@@ -38,12 +39,14 @@
                               <tbody>
                                 <tr>
                                   <td>
-                                    <table width="100%" cellpadding="15" >
+                                    <table width="100%" cellpadding="15" align="center">
                                       <tbody>
                                         <tr>
-                                          <td align="center"><a href="" class="grey-link"><span>Shop Apparel</span></a></td>
-                                          <td align="center"><a href="" class="grey-link"><span>Shop Accessories</span></a></td>
-                                          <td align="center"><a href="" class="grey-link"><span>Shop Art</span></a></td>
+                                          <td align="center">
+                                            <a href="https://gear.mozilla.org/collections/apparel" class="grey-link"><span>Shop Apparel</span></a>
+                                            <a href="https://gear.mozilla.org/collections/accessories" class="grey-link"><span>Shop Accessories</span></a>
+                                            <a href="https://gear.mozilla.org/collections/art" class="grey-link"><span>Shop Art</span></a>
+                                          </td>
                                         </tr>
                                       </tbody>
                                     </table>
@@ -51,27 +54,31 @@
                                 </tr>
                                 <tr>
                                   <td>
-                                    <table cellpadding="15" width="550" align="center">
+                                    <table cellpadding="10" width="100%" align="center">
                                       <tbody>
                                         <tr>
+                                          <td>&nbsp;</td>
                                           <td id="main-content" class="no-padding">
                               <!-- EMAIL CONTENT PLACEHOLDER STARTS ==============  -->
                                             @@include('./content.html')
                               <!-- EMAIL CONTENT PLACEHOLDER ENDS ==============  -->
                                           </td>
+                                          <td>&nbsp;</td>
                                         </tr>
                                         <tr>
+                                          <td>&nbsp;</td>
                                           <td id="content-footer" align="center">
                                             <table cellpadding="5">
                                               <tbody>
                                                 <tr>
                                                   <td align="center">
-                                                    Visit us at <a href="https://gear.mozilla.org/"><span>https://gear.mozilla.org/</span></a>
+                                                    Visit us at <a href="https://gear.mozilla.org/"><span>gear.mozilla.org</span></a>
                                                   </td>
                                                 </tr>
                                               </tbody>
                                             </table>
                                           </td>
+                                          <td>&nbsp;</td>
                                         </tr>
                                       </tbody>
                                     </table>
@@ -79,15 +86,16 @@
                                 </tr>
                                 <tr>
                                   <td id="email-footer">
-                                    <table width="80%" align="center">
+                                    <table width="100%" cellpadding="15" align="center">
                                       <tbody>
                                         <tr>
-                                          <td>
+                                          <td>&nbsp;</td>
+                                          <td class="no-padding">
                                             <table>
                                               <tbody>
                                                 <tr>
                                                   <td>
-                                                    <a href="https://www.mozilla.org/"><img src="img/mozilla_wordmark_grey.png" alt="Mozilla wordmark" width="100" /></a>
+                                                    <a href="https://www.mozilla.org/"><img src="http://image.e.mozilla.org/lib/fe9115707362037b71/m/1/moz_wordmark_grey.png" alt="Mozilla wordmark" width="100" /></a>
                                                   </td>
                                                   <td>
                                                     <p>
@@ -98,9 +106,11 @@
                                               </tbody>
                                             </table>
                                           </td>
+                                          <td>&nbsp;</td>
                                         </tr>
                                         <tr>
-                                          <td>
+                                          <td>&nbsp;</td>
+                                          <td class="no-padding">
                                             <p>
                                               Mozilla. 331 E. Evelyn Avenue, Mountain View, CA 94041, United States<br />
                                             </p>
@@ -108,6 +118,7 @@
                                               Copyright © 2015 Mozilla Foundation Content available under a Creative Commons share-alike license V2.0
                                             </p>
                                           </td>
+                                          <td>&nbsp;</td>
                                         </tr>
                                       </tbody>
                                     </table>
@@ -129,5 +140,3 @@
     </table>
   </body>
 </html>
-
-
